@@ -19,8 +19,14 @@
 #     print()
 #     sp-=1
 
+# n = int(input("Enter a num:"))
+# for i in range(n):
+#     for j in range(1,i+1):
+#         print(chr(64+j), end=" ")
+#     print()
+    
 n = int(input("Enter a num:"))
 for i in range(n):
     for j in range(1,i+1):
-        print(chr(64+j), end=" ")
+        print(chr(64+i), end=" ")
     print()
