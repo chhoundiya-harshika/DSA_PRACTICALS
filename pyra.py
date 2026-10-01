@@ -39,9 +39,30 @@
 #         num+=1
 #     print()
 
-n = int(input("Enter a num:"))
+# n = int(input("Enter a num:"))
+# for i in range(n):
+#     print('  '*(n-i+1), end ="")
+#     for j in range(2*i+1):
+#             print(chr(65+j), end=" ")
+#     print()
+
+# n = int(input("Enter a num:"))
+# for i in range(n):
+#     print('  '*(n-i+1), end="")
+#     for j in range (2*i+1):
+#        if (j==0 or j==2*i or i==n-1):
+#            print(chr(65+j), end=" ")
+#        else:
+#            print(" ", end=" ")
+#     print()
+
+n=7
+mid=(n+1)//2
+
 for i in range(n):
-    print('  '*(n-i+1), end ="")
-    for j in range(2*i+1):
-            print(chr(65+j), end=" ")
+    for j in range(n):
+        if(j==mid or i==mid):
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
     print()
