@@ -25,8 +25,23 @@
 #         print(chr(64+j), end=" ")
 #     print()
     
+# n = int(input("Enter a num:"))
+# for i in range(n):
+#     for j in range(1,i+1):
+#         print(chr(64+i), end=" ")
+#     print()
+    
+# n = int(input("Enter a num:"))
+# num=0
+# for i in range(n):
+#     for j in range(1,i+1):
+#         print(chr(65+num), end=" ")
+#         num+=1
+#     print()
+
 n = int(input("Enter a num:"))
 for i in range(n):
-    for j in range(1,i+1):
-        print(chr(64+i), end=" ")
+    print('  '*(n-i+1), end ="")
+    for j in range(2*i+1):
+            print(chr(65+j), end=" ")
     print()
