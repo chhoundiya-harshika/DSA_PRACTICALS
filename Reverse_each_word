@@ -1,0 +1,7 @@
+def reverse_word(sentence):
+    words = sentence.split()
+    reversed_words = [word[::-1] for word in words]
+    return " ".join(reverse_word)
+
+input_sentence = "the sky is blue"
+print(reverse_word(input_sentence))    
