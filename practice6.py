@@ -17,9 +17,17 @@
 # print(sum)
     
 # count the total numbers of list
+# num = list(map(int,input("enter numbers:").split()))
+# count =0
+# for i in num:
+#     if i in num:
+#         count +=1
+# print(count)
+
+
+#reverse the list 
 num = list(map(int,input("enter numbers:").split()))
-count =0
-for i in num:
-    if i in num:
-        count +=1
-print(count)
+rev=[]
+for i in range (len(num) -1,-1,-1):
+    rev.append(num[i])
+print(rev)
