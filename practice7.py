@@ -31,11 +31,11 @@
 # arr = [5,10,15,20]
 # print(linear_search(arr,10))
     
-def find_occ(arr, target):
-    count = 0
-    for i in arr:
-        if i==target:
-            count+=1
-    return count
-arr=[5,10,10,15,20,20]
-print(find_occ(arr, 20))
+# def find_occ(arr, target):
+#     count = 0
+#     for i in arr:
+#         if i==target:
+#             count+=1
+#     return count
+# arr=[5,10,10,15,20,20]
+# print(find_occ(arr, 20))
