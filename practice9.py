@@ -17,5 +17,13 @@
 #     print(i)
 
 #reverse the string
-text = "hello"
-print(text[::-1])
+# text = "hello"
+# print(text[::-1])
+
+def reverse_string(text):
+    reversed_text=""
+    for i in text:
+        reversed_text = i + reversed_text
+    return reversed_text
+print(reverse_string("hello"))
+print(reverse_string("python"))
