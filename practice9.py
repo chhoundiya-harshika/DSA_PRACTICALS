@@ -28,6 +28,12 @@
 # print(reverse_string("hello"))
 # print(reverse_string("python"))
 
-text = "Programming"
-for ch in set (text):
-    print(ch, text.count(ch))
+# text = "Programming"
+# for ch in set (text):
+#     print(ch, text.count(ch))
+
+text = "banana"
+freq ={}
+for ch in text:
+    freq [ch]= freq.get(ch, 0)+1
+print(freq)
