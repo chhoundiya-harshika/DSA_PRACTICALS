@@ -12,6 +12,10 @@
 # print(text[3])
 
 #string traversal
-text= "Python"
-for i in text:
-    print(i)
+# text= "Python"
+# for i in text:
+#     print(i)
+
+#reverse the string
+text = "hello"
+print(text[::-1])
