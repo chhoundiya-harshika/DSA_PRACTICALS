@@ -32,9 +32,23 @@
 # else: 
 #     print(result)
 
-def find_missing(arr,n):
-    expected=n*(n+1)//2
-    actual=sum(arr)
+# def find_missing(arr,n):
+#     expected=n*(n+1)//2
+#     actual=sum(arr)
     
-    return expected-actual
-print(find_missing([1,2,3,5],5))
+#     return expected-actual
+# print(find_missing([1,2,3,5],5))
+
+def move_zero(arr):
+    position = 0
+    
+    for i in range(len(arr)):
+        if arr[i]!=0:
+            arr[position]=arr[i]
+            position+=1
+    while position<len(arr):
+        arr[position]=0
+        position+=1
+    return arr
+numbers=[0,1,0,3,12]
+print(move_zero(numbers))
