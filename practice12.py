@@ -14,8 +14,16 @@
 # print(count_digit(12345))
 # print(count_digit(13))
 # print(count_digit(0))
-def factorial(n):
-    if n==0 or n==1:
-        return 1
-    return n* factorial(n-1)
-print(factorial(6))
+# def factorial(n):
+#     if n==0 or n==1:
+#         return 1
+#     return n* factorial(n-1)
+# print(factorial(6))
+
+#sum of natural numbers with recursion
+
+def sum_natural(n):
+    if n==0:
+        return 0
+    return n+sum_natural(n-1)
+print(sum_natural(10))
