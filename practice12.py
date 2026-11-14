@@ -22,8 +22,17 @@
 
 #sum of natural numbers with recursion
 
-def sum_natural(n):
+# def sum_natural(n):
+#     if n==0:
+#         return 0
+#     return n+sum_natural(n-1)
+# print(sum_natural(10))
+
+def fibonacci(n):
     if n==0:
         return 0
-    return n+sum_natural(n-1)
-print(sum_natural(10))
+    if n==1:
+        return 1
+    return fibonacci(n-1)+fibonacci(n-2)
+for i in range(7):
+    print(fibonacci(i), end= " ")
