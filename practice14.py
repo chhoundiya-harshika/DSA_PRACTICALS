@@ -29,7 +29,7 @@
 #             freq[i]=1
             
         
-#        git add .
+#       
 # return freq
 # print(frequency_count("Programmingp"))
 
