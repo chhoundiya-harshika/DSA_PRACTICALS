@@ -18,24 +18,35 @@
 # # peek
 # print(stack[-1])
 
-def is_balanced(text):
+# def is_balanced(text):
+#     stack=[]
+#     pairs={
+#         ')':'(',
+#         ')':'(',
+#         ')':'(',
+#         ')':'(',
+#         ')':'('
+#     }
+#     for i in "({{":
+#         stack.append(i)
+#     else:
+#         if not stack:
+#             return False
+#         if stack[-1]!=pairs.get(i):
+#             return False
+#         stack.pop()
+#     return len(stack)==0
+# print(is_balanced("{[()]}"))
+# print(is_balanced("([)]"))
+# print(is_balanced("((()"))
+
+def reverse_string(text):
     stack=[]
-    pairs={
-        ')':'(',
-        ')':'(',
-        ')':'(',
-        ')':'(',
-        ')':'('
-    }
-    for i in "({{":
+    for i in text:
         stack.append(i)
-    else:
-        if not stack:
-            return False
-        if stack[-1]!=pairs.get(i):
-            return False
-        stack.pop()
-    return len(stack)==0
-print(is_balanced("{[()]}"))
-print(is_balanced("([)]"))
-print(is_balanced("((()"))
+    result=""
+    
+    while stack:
+        result+=stack.pop()
+    return result
+print(reverse_string("python"))
