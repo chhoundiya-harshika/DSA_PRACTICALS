@@ -51,29 +51,39 @@
 #     return result
 # print(reverse_string("python"))
 
-class stack:
-    def __init__(self):
-        self.item=[]
-    def push (self,value):
-        self.item.append(value)
-    def pop(self):
-        if self.is_empty():
-            return None
-        return self.item.pop()
-    def peek(self):
-        if self.is_empty():
-            return None
-        return self.item[-1]
-    def is_empty(self):
-        return len(self.item)==0
+# class stack:
+#     def __init__(self):
+#         self.item=[]
+#     def push (self,value):
+#         self.item.append(value)
+#     def pop(self):
+#         if self.is_empty():
+#             return None
+#         return self.item.pop()
+#     def peek(self):
+#         if self.is_empty():
+#             return None
+#         return self.item[-1]
+#     def is_empty(self):
+#         return len(self.item)==0
     
-s = stack()
-s.push(10)   
-s.push(20)   
-s.push(30)   
+# s = stack()
+# s.push(10)   
+# s.push(20)   
+# s.push(30)   
 
-print(s.peek())
-print(s.pop())
-print(s.peek())
-print(s.is_empty())
-            
+# print(s.peek())
+# print(s.pop())
+# print(s.peek())
+# print(s.is_empty())
+
+def two_sum(arr,target):
+    seen={ }
+    
+    for i, num in enumerate(arr):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement],i]
+        seen[num]=i
+    return []
+print(two_sum([2,7,11,15],9))
