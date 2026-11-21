@@ -13,10 +13,11 @@
 
 # find common_element from array
 
-def common_element(arr1,arr2):
+# def common_element(arr1,arr2):
     
-    set1= set(arr1)
-    set2= set(arr2)
+#     set1= set(arr1)
+#     set2= set(arr2)
     
-    return set1.intersection(set2)
-print(common_element([1,2,3,4],[3,4,5,6]))
+#     return set1.intersection(set2)
+# print(common_element([1,2,3,4],[3,4,5,6]))
+
